@@ -21,7 +21,7 @@ const router = createRouter({
     {
       path: "/coaches/:id",
       component: CoachDetails,
-      children: [{ path: "/contact", component: ContactCoach }],
+      children: [{ path: "contact", component: ContactCoach }],
     },
     {
       path: "/register",
@@ -38,4 +38,4 @@ const router = createRouter({
   ],
 });
 
-module.exports = router;
+export default router;
